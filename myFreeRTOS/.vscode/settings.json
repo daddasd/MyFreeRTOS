@@ -1,0 +1,8 @@
+{
+  "KeilAssistant.Project.ExcludeList": [
+    
+    "template.uvproj",
+    "template.uvprojx"
+  ],
+  "C_Cpp.errorSquiggles": "disabled"
+}
