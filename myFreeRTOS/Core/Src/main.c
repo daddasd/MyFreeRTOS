@@ -20,8 +20,6 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "gpio.h"
-#include <stm32f100xb.h>
-#include <stm32f1xx_hal_flash.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
