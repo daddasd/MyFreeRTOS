@@ -1,23 +1,24 @@
 {
     "configurations": [
         {
-            "name": "myFreeRTOS",
+            "name": "01_freertos_template",
             "includePath": [
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Core\\Inc",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Middlewares\\Third_Party\\FreeRTOS\\Source\\include",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Middlewares\\Third_Party\\FreeRTOS\\Source\\CMSIS_RTOS_V2",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\RVDS\\ARM_CM3",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Drivers\\CMSIS\\Include",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Core\\Inc",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Drivers\\STM32F1xx_HAL_Driver\\Inc\\Legacy",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Drivers\\STM32F1xx_HAL_Driver\\Inc",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Middlewares\\Third_Party\\FreeRTOS\\Source\\include",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Middlewares\\Third_Party\\FreeRTOS\\Source\\CMSIS_RTOS_V2",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\RVDS\\ARM_CM3",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Drivers\\CMSIS\\Device\\ST\\STM32F1xx\\Include",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Drivers\\CMSIS\\Include",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Drivers\\DshanMCU-F103",
                 "D:\\Keil5_MDK\\ARM\\ARM\\ARMCC\\include",
                 "D:\\Keil5_MDK\\ARM\\ARM\\ARMCC\\include\\rw",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\MDK-ARM",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Core\\Src",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Drivers\\STM32F1xx_HAL_Driver\\Src",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Middlewares\\Third_Party\\FreeRTOS\\Source",
-                "d:\\STM32FreeRTOS\\myFreeRTOS\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\MemMang"
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\MDK-ARM",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Core\\Src",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Drivers\\STM32F1xx_HAL_Driver\\Src",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Middlewares\\Third_Party\\FreeRTOS\\Source",
+                "d:\\BaiduNetdiskDownload\\Dongmcu\\5_程序源码\\02_FreeRTOS程序\\02_视频配套的源码\\02_first_rtos_app\\02_first_rtos_app\\01_freertos_template\\Middlewares\\Third_Party\\FreeRTOS\\Source\\portable\\MemMang"
             ],
             "defines": [
                 "USE_HAL_DRIVER",

@@ -1,4 +1,24 @@
 /* USER CODE BEGIN Header */
+#include "driver_led.h"
+#include "driver_lcd.h"
+#include "driver_mpu6050.h"
+#include "driver_timer.h"
+#include "driver_ds18b20.h"
+#include "driver_dht11.h"
+#include "driver_active_buzzer.h"
+#include "driver_passive_buzzer.h"
+#include "driver_color_led.h"
+#include "driver_ir_receiver.h"
+#include "driver_ir_sender.h"
+#include "driver_light_sensor.h"
+#include "driver_ir_obstacle.h"
+#include "driver_ultrasonic_sr04.h"
+#include "driver_spiflash_w25q64.h"
+#include "driver_rotary_encoder.h"
+#include "driver_motor.h"
+#include "driver_key.h"
+#include "driver_uart.h"
+
 /**
   ******************************************************************************
   * File Name          : freertos.c
@@ -6,7 +26,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2025 STMicroelectronics.
+  * Copyright (c) 2023 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -57,6 +77,13 @@ const osThreadAttr_t defaultTask_attributes = {
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
+void MyTask(void *argument)
+{
+	while (1)
+	{
+		Led_Test();
+	}
+}
 
 /* USER CODE END FunctionPrototypes */
 
@@ -96,6 +123,7 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+  xTaskCreate(MyTask, "myfirsttask", 128, NULL, osPriorityNormal, NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -105,6 +133,7 @@ void MX_FREERTOS_Init(void) {
 }
 
 /* USER CODE BEGIN Header_StartDefaultTask */
+
 /**
   * @brief  Function implementing the defaultTask thread.
   * @param  argument: Not used
@@ -115,9 +144,29 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
+  LCD_Init();
+  LCD_Clear();
+  
   for(;;)
   {
-    osDelay(1);
+    //Led_Test();
+    LCD_Test();
+	//MPU6050_Test(); 
+	//DS18B20_Test();
+	//DHT11_Test();
+	//ActiveBuzzer_Test();
+	//PassiveBuzzer_Test();
+	//ColorLED_Test();
+	//IRReceiver_Test();
+	//IRSender_Test();
+	//LightSensor_Test();
+	//IRObstacle_Test();
+	//SR04_Test();
+	//W25Q64_Test();
+	//RotaryEncoder_Test();
+	//Motor_Test();
+	//Key_Test();
+	//UART_Test();
   }
   /* USER CODE END StartDefaultTask */
 }

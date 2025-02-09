@@ -1,8 +1,6 @@
 {
-  "KeilAssistant.Project.ExcludeList": [
-    
-    "template.uvproj",
-    "template.uvprojx"
-  ],
-  "C_Cpp.errorSquiggles": "disabled"
+  "C_Cpp.errorSquiggles": "disabled",
+  "files.associations": {
+    "单片机51 遥控器 MP3遥控器 红外线遥控器（配电池） (2).C": "cpp"
+  }
 }
